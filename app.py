@@ -404,7 +404,8 @@ def main():
         all_ok = all(v is not None for v in results.values())
 
     # ---------- 最后统一发送一次 TG 通知 ----------
-    current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    local_time = time.gmtime(time.time() + 8 * 3600)
+    current_tim = time.strftime("%Y-%m-%d %H:%M:%S", local_time)
     lines = ["🇯🇵 MWS 续期通知\n"]
     if all_ok:
         lines.append("✅ 全部续期成功")
