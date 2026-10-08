@@ -231,7 +231,6 @@ def discord_authorize(state: str) -> str:
     print(f"✅ 拿到回调 URL: {re.sub(r'code=[^&]+', 'code=***', location)}")
     return location
 
-
 def fetch_new_cookie_via_http() -> str:
     """纯 HTTP 完成 Discord OAuth 授权拿cookie：
     1) GET /auth/login 拿 302 -> discord 授权页 URL（含 state），Session 自动种下 oauth_state cookie
@@ -273,7 +272,7 @@ def fetch_new_cookie_via_http() -> str:
         #    成功时后端 302 到 cloud.m-ws.cc/auth/success?code=<一次性code>（不直接发 token）
         print("↩️ 携带授权码请求回调...")
         cb = sess.get(location, timeout=20, allow_redirects=False)
-        # print(f"   回调响应: HTTP {cb.status_code}")
+        # print(f"↩️ 回调响应: HTTP {cb.status_code}")
 
         success_code = ""
         if cb.status_code == 302:
@@ -355,7 +354,7 @@ def main():
         print("ℹ️ 未配置 COOKIE，将直接走 Discord 登录流程")
 
     # ---------- 第一轮：使用现有 COOKIE 调续期 API ----------
-    results = {}          # server_id -> 剩余小时数（None 表示失败）
+    results = {}      
     all_ok = True
     for s_id in server_list:
         ok, status_code, remaining = renew_server(s_id)
