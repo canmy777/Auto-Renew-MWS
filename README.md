@@ -13,6 +13,7 @@
 |---------------------|----------|---------------------------------------------------|
 | EMAIL              | ❌ 可选  | 用于通知使用的Email,可随意填写                         |
 | COOKIE             | ✅ 必填   | __Host-mrtcloud_token的值,有效期1个月,首次可随意填写   |
+| SERVER_IDS         | ✅ 必填   | 服务器id, 切换到网络,点进服务器看请求记录，多个用逗号隔开，例如：9001,9002   |
 | DISCORD_TOKEN      | ✅ 必填  | Discord Token，SESSION_TOKEN失效时自动OAuth登录        |
 | GH_TOKEN           | ✅ 必填   | GitHub(classic) token,用于自动更新session_token,以ghp_xxx开头|
 | NODE_LINK          | ❌ 可选  | 代理链接（如 vless:// vmess:// trojan:// hysteria2:// tuic:// anytls:// socks5:// )|
@@ -34,6 +35,11 @@
 | socks5:         | socks或socks5://user:pass@server:port   | 可直接使用v2rayN导出的链接,不建议  |
 
 ━━━━━━━━━━━━━━━━━━━━━━
+
+### SERVER_IDS的获取
+
+<img width="800" height="200" alt="image" src="https://github.com/user-attachments/assets/04624397-ff2e-4010-bee0-d704d95bf6ab" />
+
 
 ## 使用
 
