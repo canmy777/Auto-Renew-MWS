@@ -36,7 +36,7 @@
 
 ━━━━━━━━━━━━━━━━━━━━━━
 
-### SERVER_IDS的获取
+### SERVER_ID的获取
 
 <img width="800" height="200" alt="image" src="https://github.com/user-attachments/assets/04624397-ff2e-4010-bee0-d704d95bf6ab" />
 
