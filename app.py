@@ -273,7 +273,7 @@ def fetch_new_cookie_via_http() -> str:
         #    成功时后端 302 到 cloud.m-ws.cc/auth/success?code=<一次性code>（不直接发 token）
         print("↩️ 携带授权码请求回调...")
         cb = sess.get(location, timeout=20, allow_redirects=False)
-        print(f"   回调响应: HTTP {cb.status_code}")
+        # print(f"   回调响应: HTTP {cb.status_code}")
 
         success_code = ""
         if cb.status_code == 302:
