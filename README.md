@@ -12,7 +12,7 @@
 | Secret 名称         | 是否必填 | 说明                                              |
 |---------------------|----------|---------------------------------------------------|
 | EMAIL              | ❌ 可选  | 用于通知使用的Email,可随意填写                         |
-| COOKIE             | ✅ 必填   | __Host-mrtcloud_token的值,有效期1个月               |
+| COOKIE             | ✅ 必填   | __Host-mrtcloud_token的值,有效期1个月,首次可随意填写   |
 | DISCORD_TOKEN      | ✅ 必填  | Discord Token，SESSION_TOKEN失效时自动OAuth登录        |
 | GH_TOKEN           | ✅ 必填   | GitHub(classic) token,用于自动更新session_token,以ghp_xxx开头|
 | NODE_LINK          | ❌ 可选  | 代理链接（如 vless:// vmess:// trojan:// hysteria2:// tuic:// anytls:// socks5:// )|
